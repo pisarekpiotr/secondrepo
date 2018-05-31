@@ -8,6 +8,10 @@ public int add(int x, int y) {
         return x + y;
     }
 
+    public int mnozenie( int a, int b) {
+        return a * b;
+    }
+
     public int subtraction(int a, int b) {
         return a - b;
     }
