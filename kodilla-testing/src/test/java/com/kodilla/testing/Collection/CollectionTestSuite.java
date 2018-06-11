@@ -16,18 +16,20 @@ public class CollectionTestSuite {
 
     @Test
     public void testOddNumbersExterminatorNormallist() {
-        ArrayList<Integer> testTwo = new ArrayList<Integer>();
+        ArrayList<Integer> evenNumbers = new ArrayList<Integer>();
+        ArrayList<Integer> oddNumbers = new ArrayList<Integer>();
         for (int i = 0; i < 50; i++) {
             if (i % 2 == 0) {
-                testTwo.add(i + 1);
+                oddNumbers.add(i + 1);
             } else {
-                testTwo.add(i + 1);
+                evenNumbers.add(i + 1);
             }
         }
-        OddNumbersExterminator objectTwo = new OddNumbersExterminator();
-        objectTwo.exterminate(testTwo);
-        Assert.assertEquals(50, testTwo.size());
-        System.out.println(testTwo);
+        //OddNumbersExterminator objectTwo = new OddNumbersExterminator();
+      //  objectTwo.exterminate(evenNumbers);
+        Assert.assertEquals(25 , evenNumbers.size());
+        System.out.println(evenNumbers);
+
     }
 }
 
