@@ -3,6 +3,7 @@ package com.kodilla.testing.Collection;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +28,7 @@ public class CollectionTestSuite {
             }
         }
         OddNumbersExterminator objectTwo = new OddNumbersExterminator();
-        List result = objectTwo.exterminate(evenNumbers);
+        ArrayList <Integer> result = objectTwo.exterminate(evenNumbers);
         Assert.assertEquals(25 , result.size());
         System.out.println(result);
 
