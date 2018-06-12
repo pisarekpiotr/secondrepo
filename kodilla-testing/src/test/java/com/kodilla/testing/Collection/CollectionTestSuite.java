@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CollectionTestSuite {
     @Test
@@ -25,10 +26,10 @@ public class CollectionTestSuite {
                 evenNumbers.add(i + 1);
             }
         }
-        //OddNumbersExterminator objectTwo = new OddNumbersExterminator();
-      //  objectTwo.exterminate(evenNumbers);
-        Assert.assertEquals(25 , evenNumbers.size());
-        System.out.println(evenNumbers);
+        OddNumbersExterminator objectTwo = new OddNumbersExterminator();
+        List result = objectTwo.exterminate(evenNumbers);
+        Assert.assertEquals(25 , result.size());
+        System.out.println(result);
 
     }
 }
