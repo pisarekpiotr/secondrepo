@@ -19,19 +19,22 @@ public class CollectionTestSuite {
     @Test
     public void testOddNumbersExterminatorNormallist() {
         ArrayList<Integer> evenNumbers = new ArrayList<Integer>();
-        ArrayList<Integer> oddNumbers = new ArrayList<Integer>();
-        for (int i = 0; i < 50; i++) {
-            if (i % 2 == 0) {
-                oddNumbers.add(i + 1);
-            } else {
-                evenNumbers.add(i + 1);
-            }
-        }
+        ArrayList<Integer> expected = new ArrayList<Integer>();
+
+        evenNumbers.add(2);
+        evenNumbers.add(22);
+        evenNumbers.add(169);
+        evenNumbers.add(5);
+        evenNumbers.add(3);
+        expected.add(2);
+        expected.add(22);
+
+
         OddNumbersExterminator objectTwo = new OddNumbersExterminator();
         ArrayList <Integer> result = objectTwo.exterminate(evenNumbers);
-        Assert.assertEquals(25 , result.size());
+        Assert.assertEquals(2 , result.size());
+        Assert.assertEquals(expected , result);
         System.out.println(result);
-
     }
 }
 
