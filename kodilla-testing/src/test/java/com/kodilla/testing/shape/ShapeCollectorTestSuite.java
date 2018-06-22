@@ -41,5 +41,15 @@ public class ShapeCollectorTestSuite {
 
    @Test
   public void testShowFigures(){
+       ShapeCollector shapeCollector = new ShapeCollector(new Circle(2));
+       Circle circle = new Circle(2);
+       shapeCollector.addFigure(circle);
+       Triangle triangle = new Triangle(2,6);
+       shapeCollector.addFigure(triangle);
+       Square square = new Square(7);
+       shapeCollector.addFigure(square);
+
+       String showFigeres = shapeCollector.showFigures();
+       Assert.assertEquals("CircleTriangleSquare",showFigeres);
    }
 }

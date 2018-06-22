@@ -5,15 +5,13 @@ import java.util.ArrayList;
 public class ShapeCollector {
 
 
-    public ArrayList<Shape> shapes = new ArrayList<>() ;
+    private ArrayList<Shape> shapes = new ArrayList<>() ;
 
     public ShapeCollector(Shape shape) {
     }
 
     public void addFigure(Shape shape) {
-        ShapeCollector shapeCollector = new ShapeCollector(shape);
-        Circle circle = new Circle(2);
-        shapes.add(circle);
+        shapes.add(shape);
     }
 
   public boolean removeFigure(Shape shape) {
@@ -26,10 +24,21 @@ public class ShapeCollector {
   }
 
   public Shape getFigure(int n) {
-       return shapes.get(n);
+
+      if (n >= 0 && n < shapes.size()) {
+          return shapes.get(n);
+      } else {
+      }
+      return null;
   }
 
-  public void showFigures(){
+  public String showFigures(){
+        String result ="";
+        for (Shape shape: shapes){
+            result += shape.getShapeName();
+        }
+        return result;
+
   }
 
    public int getFiguresQuantity() {

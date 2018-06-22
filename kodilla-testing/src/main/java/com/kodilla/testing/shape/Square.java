@@ -10,7 +10,7 @@ public class Square implements Shape{
 
     @Override
     public String getShapeName() {
-        return "kwadrat";
+        return "Square";
     }
 
     @Override
