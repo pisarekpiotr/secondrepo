@@ -19,7 +19,6 @@ public class ShapeCollectorTestSuite {
    public void testRemoveFigure(){
         ShapeCollector shapeCollector = new ShapeCollector(new Circle(2));
         Circle circle = new Circle(2);
-        //shapeCollector.addFigure(circle);
 
         boolean result = shapeCollector.removeFigure(circle);
         assertFalse(result);
