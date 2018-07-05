@@ -16,13 +16,29 @@ public class StatisticsResult {
         this.postQuantity = statistics.postsCount();
         this.commentQuantity = statistics.commentsCount();
 
+        if (usersQuantity > 0) {
+            if (postQuantity > 0) {
+                this.averagePostQuantity = postQuantity / usersQuantity;
+            } else {
+                averagePostQuantity = 0;
+            }
+        }
 
-        this.averagePostQuantity = postQuantity / usersQuantity;
+        if (usersQuantity >0) {
+            if (commentQuantity > 0) {
+                this.averageCommentsQuantity = commentQuantity / usersQuantity;
+            } else {
+                averageCommentsQuantity = 0;
+            }
+        }
 
-        this.averageCommentsQuantity = postQuantity / usersQuantity;
-
-        this.averageCommentsPerPost = commentQuantity / postQuantity;
-
+        if (postQuantity > 0) {
+            if (commentQuantity > 0) {
+                this.averageCommentsPerPost = commentQuantity / postQuantity;
+            } else {
+                averageCommentsPerPost = 0;
+            }
+        }
 
     }
     public void showStatistics(){
