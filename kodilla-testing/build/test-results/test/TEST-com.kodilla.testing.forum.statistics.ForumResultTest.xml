@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.ForumResultTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2018-07-12T20:45:44" hostname="Piotr-Komputer" time="0.329">
+  <properties/>
+  <testcase name="calculateAdvStatisticsMock100usersCommentsHigherThanPosts" classname="com.kodilla.testing.forum.statistics.ForumResultTest" time="0.32"/>
+  <testcase name="calculateAdvStatisticsMockPostsHigherThanComments" classname="com.kodilla.testing.forum.statistics.ForumResultTest" time="0.001"/>
+  <testcase name="calculateAdvStatisticsMock100users0comments" classname="com.kodilla.testing.forum.statistics.ForumResultTest" time="0.0"/>
+  <testcase name="calculateAdvStatisticsMock1000posts" classname="com.kodilla.testing.forum.statistics.ForumResultTest" time="0.0"/>
+  <testcase name="calculateAdvStatisticsMock100users0Posts" classname="com.kodilla.testing.forum.statistics.ForumResultTest" time="0.0"/>
+  <testcase name="calculateAdvStatisticsMock10users" classname="com.kodilla.testing.forum.statistics.ForumResultTest" time="0.001"/>
+  <testcase name="calculateAdvStatisticsMock100usersHigherThanComments" classname="com.kodilla.testing.forum.statistics.ForumResultTest" time="0.001"/>
+  <testcase name="calculateAdvStatisticsMock100users1000Posts" classname="com.kodilla.testing.forum.statistics.ForumResultTest" time="0.001"/>
+  <testcase name="calculateAdvStatisticsMock0" classname="com.kodilla.testing.forum.statistics.ForumResultTest" time="0.0"/>
+  <testcase name="calculateAdvStatisticsMock0comments" classname="com.kodilla.testing.forum.statistics.ForumResultTest" time="0.001"/>
+  <testcase name="calculateAdvStatisticsMockCommentsHigherThanPosts" classname="com.kodilla.testing.forum.statistics.ForumResultTest" time="0.001"/>
+  <system-out><![CDATA[Statistics: 
+Users quantity100.0
+Post Quantity100.0
+Comments Quantity1001.0
+Average post quantity:1.0
+Average Comment Quantity:10.01
+Average comments per post:10.01
+
+Statistics: 
+Users quantity0.0
+Post Quantity1000.0
+Comments Quantity25.0
+Average post quantity:0.0
+Average Comment Quantity:0.0
+Average comments per post:0.025
+
+Statistics: 
+Users quantity100.0
+Post Quantity100.0
+Comments Quantity0.0
+Average post quantity:1.0
+Average Comment Quantity:0.0
+Average comments per post:0.0
+
+Statistics: 
+Users quantity0.0
+Post Quantity1000.0
+Comments Quantity1000.0
+Average post quantity:0.0
+Average Comment Quantity:0.0
+Average comments per post:1.0
+
+Statistics: 
+Users quantity100.0
+Post Quantity0.0
+Comments Quantity10.0
+Average post quantity:0.0
+Average Comment Quantity:0.1
+Average comments per post:0.0
+
+Statistics: 
+Users quantity100.0
+Post Quantity100.0
+Comments Quantity100.0
+Average post quantity:1.0
+Average Comment Quantity:1.0
+Average comments per post:1.0
+
+Statistics: 
+Users quantity100.0
+Post Quantity2000.0
+Comments Quantity1000.0
+Average post quantity:20.0
+Average Comment Quantity:10.0
+Average comments per post:0.5
+
+Statistics: 
+Users quantity100.0
+Post Quantity1000.0
+Comments Quantity10.0
+Average post quantity:10.0
+Average Comment Quantity:0.1
+Average comments per post:0.01
+
+Statistics: 
+Users quantity0.0
+Post Quantity0.0
+Comments Quantity0.0
+Average post quantity:0.0
+Average Comment Quantity:0.0
+Average comments per post:0.0
+
+Statistics: 
+Users quantity0.0
+Post Quantity1000.0
+Comments Quantity0.0
+Average post quantity:0.0
+Average Comment Quantity:0.0
+Average comments per post:0.0
+
+Statistics: 
+Users quantity0.0
+Post Quantity1000.0
+Comments Quantity1025.0
+Average post quantity:0.0
+Average Comment Quantity:0.0
+Average comments per post:1.025
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
