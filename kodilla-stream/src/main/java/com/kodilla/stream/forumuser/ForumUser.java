@@ -4,13 +4,13 @@ import java.time.LocalDate;
 
 public class ForumUser {
 
-    private final int userSignature;
+    private final String userSignature;
     private final String user;
     private final char sex ;
     private final LocalDate dateOfBirth;
     private final int posts;
 
-    public ForumUser(int userSignature, String user, char sex, LocalDate dateOfBirth , int posts) {
+    public ForumUser(final String userSignature, final String user, final char sex, final LocalDate dateOfBirth ,final int posts) {
 
         this.userSignature = userSignature;
         this.user = user;
@@ -20,7 +20,7 @@ public class ForumUser {
     }
 
 
-    public int getUserSignature() {
+    public String getUserSignature() {
         return userSignature;
     }
 
