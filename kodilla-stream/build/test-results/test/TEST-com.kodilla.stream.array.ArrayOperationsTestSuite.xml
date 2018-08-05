@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.stream.array.ArrayOperationsTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-08-04T12:34:58" hostname="Piotr-Komputer" time="0.013">
+  <properties/>
+  <testcase name="testGetAverage2" classname="com.kodilla.stream.array.ArrayOperationsTestSuite" time="0.01"/>
+  <testcase name="testGetAverage" classname="com.kodilla.stream.array.ArrayOperationsTestSuite" time="0.003"/>
+  <system-out><![CDATA[1
+2
+3
+4
+5
+6
+7
+8
+9
+17293
+19
+234
+56
+78
+1266.0714285714287
+1
+2
+3
+4
+5
+6
+7
+8
+9
+17293
+19
+234
+56
+78
+1266.0714285714287
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
