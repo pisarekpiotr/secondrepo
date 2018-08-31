@@ -2,7 +2,7 @@ package com.kodilla.good.patterns.challenges;
 
 public class ProductType {
 
-    public String productType;
+    private String productType;
 
     public ProductType(String productType) {
         this.productType = productType;
