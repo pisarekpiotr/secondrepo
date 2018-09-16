@@ -6,7 +6,7 @@ public class ExceptionHandling {
 
         try {
             SecondChallenge secondChallenge = new SecondChallenge();
-            secondChallenge.probablyIWillThrowException(0,1.5);
+            secondChallenge.probablyIWillThrowException(0, 1.5);
 
         } catch (Exception e) {
             System.out.println("Wrong numbers. Error: " + e);

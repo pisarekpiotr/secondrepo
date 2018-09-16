@@ -16,9 +16,11 @@ public class LibraryUser {
     public String getFirstname() {
         return firstname;
     }
+
     public String getLastname() {
         return lastname;
     }
+
     public String getPeselId() {
         return peselId;
     }

@@ -3,38 +3,38 @@ package com.kodilla.testing.shape;
 import java.util.Objects;
 
 public class ForumPost {
-   // String postBody;
+    // String postBody;
     //String author;
 
     //public ForumPost(String postBodyy, String author) {
-      //  this.postBody = postBody;
-        //this.author = author;
-        //}
+    //  this.postBody = postBody;
+    //this.author = author;
+    //}
 
     //public String getPostBody() {
-      //  return postBody;
-    }
+    //  return postBody;
+}
 
-    //public String getAuthor() {
-      //  return author;
-    //}
-    //@Override
+//public String getAuthor() {
+//  return author;
+//}
+//@Override
 
-    //@Override
-    //public boolean equals(Object o) {
-      //  if (this == o) return true;
-        //if (o == null || getClass() != o.getClass()) return false;
-        //ForumPost forumPost = (ForumPost) o;
-        //if (!postBody.equals(forumPost.postBody)) return false;
-        //return author.equals(forumPost.author);
-    //}
+//@Override
+//public boolean equals(Object o) {
+//  if (this == o) return true;
+//if (o == null || getClass() != o.getClass()) return false;
+//ForumPost forumPost = (ForumPost) o;
+//if (!postBody.equals(forumPost.postBody)) return false;
+//return author.equals(forumPost.author);
+//}
 
-    //@Override
-    //public int hashCode() {
-      //  int result = postBody.hashCode();
-        //result = 31 * result + author.hashCode();
-        //return result;
-    //}
+//@Override
+//public int hashCode() {
+//  int result = postBody.hashCode();
+//result = 31 * result + author.hashCode();
+//return result;
+//}
 //}
 
 

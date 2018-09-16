@@ -2,7 +2,7 @@ package com.kodilla.testing.shape;
 
 import java.util.Objects;
 
-public class Circle implements Shape{
+public class Circle implements Shape {
 
     private double r;
 
@@ -35,6 +35,6 @@ public class Circle implements Shape{
 
     @Override
     public Double getField() {
-        return Math.PI*r*r;
+        return Math.PI * r * r;
     }
 }

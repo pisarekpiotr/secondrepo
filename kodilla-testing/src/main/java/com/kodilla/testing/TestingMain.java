@@ -18,28 +18,28 @@ public class TestingMain {
 
         System.out.println("Test - pierwszy test jednostkowy:");
         Calculator1 firstCalculator = new Calculator1();
-        int result2 = firstCalculator.add (1,2);
-        int result3 = firstCalculator.substract(1,2);
+        int result2 = firstCalculator.add(1, 2);
+        int result3 = firstCalculator.substract(1, 2);
 
         System.out.println();
         System.out.println("A + B = 4 ");
-        if (result2 == 4 ) {
+        if (result2 == 4) {
             System.out.println("test OK");
         } else {
             System.out.println("Error!");
         }
 
-        System.out.println("A + B = "  + result2);
+        System.out.println("A + B = " + result2);
 
         System.out.println();
         System.out.println("A - B = 4 ");
-        if (result3 == 4 ) {
+        if (result3 == 4) {
             System.out.println("test OK");
         } else {
             System.out.println("Error!");
         }
 
-        System.out.println("A - B = "  + result3);
-      }
+        System.out.println("A - B = " + result3);
     }
+}
 

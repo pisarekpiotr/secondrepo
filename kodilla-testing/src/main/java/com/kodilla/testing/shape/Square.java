@@ -1,6 +1,6 @@
 package com.kodilla.testing.shape;
 
-public class Square implements Shape{
+public class Square implements Shape {
 
     private double side;
 
@@ -15,6 +15,6 @@ public class Square implements Shape{
 
     @Override
     public Double getField() {
-        return side*side;
+        return side * side;
     }
 }

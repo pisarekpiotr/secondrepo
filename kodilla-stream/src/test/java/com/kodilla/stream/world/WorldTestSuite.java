@@ -1,11 +1,13 @@
 package com.kodilla.stream.world;
+
 import org.junit.Assert;
 import org.junit.Test;
+
 import java.math.BigDecimal;
 
 public class WorldTestSuite {
     @Test
-        public void testGetPeopleQuantity(){
+    public void testGetPeopleQuantity() {
 
         //Given
         World continentTest = new World();
@@ -42,9 +44,9 @@ public class WorldTestSuite {
         continentTest.addContinent(SouthAmerica);
 
         //When
-        BigDecimal totalPopulation = new BigDecimal( 69130706);
+        BigDecimal totalPopulation = new BigDecimal(69130706);
 
         //Then
         Assert.assertEquals(totalPopulation, continentTest.getPeopleQuantity());
-        }
+    }
 }

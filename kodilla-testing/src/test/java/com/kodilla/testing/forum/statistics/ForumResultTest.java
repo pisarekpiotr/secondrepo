@@ -1,6 +1,7 @@
 package com.kodilla.testing.forum.statistics;
 
 import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -81,7 +82,7 @@ public class ForumResultTest {
 
         int usersQuantity = 0;
         List<String> usersList = usersGenerator(usersQuantity);
-        int postQuantity =1000;
+        int postQuantity = 1000;
         int commentsQuantity = 25;
 
         when(statisticsMock.usersNames()).thenReturn(usersList);
@@ -102,7 +103,7 @@ public class ForumResultTest {
 
         int usersQuantity = 0;
         List<String> usersList = usersGenerator(usersQuantity);
-        int postQuantity =1000;
+        int postQuantity = 1000;
         int commentsQuantity = 1025;
 
         when(statisticsMock.usersNames()).thenReturn(usersList);
@@ -123,7 +124,7 @@ public class ForumResultTest {
 
         int usersQuantity = 100;
         List<String> usersList = usersGenerator(usersQuantity);
-        int postQuantity =100;
+        int postQuantity = 100;
         int commentsQuantity = 100;
 
         when(statisticsMock.usersNames()).thenReturn(usersList);
@@ -144,7 +145,7 @@ public class ForumResultTest {
 
         int usersQuantity = 100;
         List<String> usersList = usersGenerator(usersQuantity);
-        int postQuantity =100;
+        int postQuantity = 100;
         int commentsQuantity = 1001;
 
         when(statisticsMock.usersNames()).thenReturn(usersList);
@@ -165,7 +166,7 @@ public class ForumResultTest {
 
         int usersQuantity = 100;
         List<String> usersList = usersGenerator(usersQuantity);
-        int postQuantity =2000;
+        int postQuantity = 2000;
         int commentsQuantity = 1000;
 
         when(statisticsMock.usersNames()).thenReturn(usersList);
@@ -186,7 +187,7 @@ public class ForumResultTest {
 
         int usersQuantity = 100;
         List<String> usersList = usersGenerator(usersQuantity);
-        int postQuantity =100;
+        int postQuantity = 100;
         int commentsQuantity = 0;
 
         when(statisticsMock.usersNames()).thenReturn(usersList);
@@ -207,7 +208,7 @@ public class ForumResultTest {
 
         int usersQuantity = 100;
         List<String> usersList = usersGenerator(usersQuantity);
-        int postQuantity =1000;
+        int postQuantity = 1000;
         int commentsQuantity = 10;
 
         when(statisticsMock.usersNames()).thenReturn(usersList);
@@ -228,7 +229,7 @@ public class ForumResultTest {
 
         int usersQuantity = 100;
         List<String> usersList = usersGenerator(usersQuantity);
-        int postQuantity =0;
+        int postQuantity = 0;
         int commentsQuantity = 10;
 
         when(statisticsMock.usersNames()).thenReturn(usersList);
@@ -252,9 +253,10 @@ public class ForumResultTest {
         }
         return usersList;
     }
-        private String user () {
-            return "User1";
-        }
+
+    private String user() {
+        return "User1";
+    }
 }
 
 

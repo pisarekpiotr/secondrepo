@@ -2,6 +2,7 @@ package com.kodilla.stream;
 
 import com.kodilla.stream.forumuser.Forum;
 import com.kodilla.stream.forumuser.ForumUser;
+
 import java.time.LocalDate;
 import java.util.stream.Collectors;
 
@@ -20,4 +21,4 @@ public class StreamMain {
 //            System.out.println(theForumResults);
 //
 //        }
-    }
+}

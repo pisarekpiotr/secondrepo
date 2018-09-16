@@ -31,9 +31,9 @@ public class CollectionTestSuite {
 
 
         OddNumbersExterminator objectTwo = new OddNumbersExterminator();
-        ArrayList <Integer> result = objectTwo.exterminate(evenNumbers);
-        Assert.assertEquals(2 , result.size());
-        Assert.assertEquals(expected , result);
+        ArrayList<Integer> result = objectTwo.exterminate(evenNumbers);
+        Assert.assertEquals(2, result.size());
+        Assert.assertEquals(expected, result);
         System.out.println(result);
     }
 }

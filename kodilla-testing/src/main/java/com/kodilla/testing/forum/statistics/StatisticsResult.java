@@ -10,7 +10,7 @@ public class StatisticsResult {
     private double averageCommentsPerPost;
 
 
-    public void calculateAdvStatistics(Statistics statistics){
+    public void calculateAdvStatistics(Statistics statistics) {
 
         this.usersQuantity = statistics.usersNames().size();
         this.postQuantity = statistics.postsCount();
@@ -24,7 +24,7 @@ public class StatisticsResult {
             }
         }
 
-        if (usersQuantity >0) {
+        if (usersQuantity > 0) {
             if (commentQuantity > 0) {
                 this.averageCommentsQuantity = commentQuantity / usersQuantity;
             } else {
@@ -41,15 +41,17 @@ public class StatisticsResult {
         }
 
     }
-    public void showStatistics(){
+
+    public void showStatistics() {
         System.out.println("Statistics: \n"
                 + "Users quantity" + usersQuantity + "\n"
                 + "Post Quantity" + postQuantity + "\n"
                 + "Comments Quantity" + commentQuantity + "\n"
-                + "Average post quantity:" + averagePostQuantity +"\n"
+                + "Average post quantity:" + averagePostQuantity + "\n"
                 + "Average Comment Quantity:" + averageCommentsQuantity + "\n"
-                + "Average comments per post:" + averageCommentsPerPost + "\n" );
+                + "Average comments per post:" + averageCommentsPerPost + "\n");
     }
+
     public double getUsersQuantity() {
         return usersQuantity;
     }

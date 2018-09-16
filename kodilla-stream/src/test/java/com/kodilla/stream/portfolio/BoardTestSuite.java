@@ -141,7 +141,7 @@ public class BoardTestSuite {
 
         //Then
         Assert.assertEquals(3, tasks.size());
-        Assert.assertEquals(18.3, averageTaskTime,0.1);
+        Assert.assertEquals(18.3, averageTaskTime, 0.1);
     }
 }
 
