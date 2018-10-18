@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.prototype.library.LibraryTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-10-18T16:33:23" hostname="Piotr-Komputer" time="0.004">
+  <properties/>
+  <testcase name="testGetBooks" classname="com.kodilla.patterns.prototype.library.LibraryTestSuite" time="0.004"/>
+  <system-out><![CDATA[Board [Cloned list (List two)]
+Book{title='Godfather', author='Mario Puzo', publicationDate=1969-02-01}
+Book{title='The Shining', author=' Stephen King', publicationDate=1977-05-14}
+Book{title='The Lord of the Rings', author='J. R. R. Tolkien', publicationDate=1954-07-29}
+Book{title='Carrie', author=' Stephen King', publicationDate=1974-12-11}
+
+Board [List one]
+Book{title='Godfather', author='Mario Puzo', publicationDate=1969-02-01}
+Book{title='The Shining', author=' Stephen King', publicationDate=1977-05-14}
+Book{title='The Lord of the Rings', author='J. R. R. Tolkien', publicationDate=1954-07-29}
+Book{title='Carrie', author=' Stephen King', publicationDate=1974-12-11}
+
+Board [Cloned from cloned list (List three)]
+Book{title='The Lord of the Rings', author='J. R. R. Tolkien', publicationDate=1954-07-29}
+Book{title='Godfather', author='Mario Puzo', publicationDate=1969-02-01}
+Book{title='The Shining', author=' Stephen King', publicationDate=1977-05-14}
+Book{title='Carrie', author=' Stephen King', publicationDate=1974-12-11}
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

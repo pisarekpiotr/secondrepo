@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.strategy.UserTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-10-18T16:33:23" hostname="Piotr-Komputer" time="0.001">
+  <properties/>
+  <testcase name="testDefaultSharingStrategies" classname="com.kodilla.patterns.strategy.UserTestSuite" time="0.001"/>
+  <testcase name="testIndividualSharingStrategy" classname="com.kodilla.patterns.strategy.UserTestSuite" time="0.0"/>
+  <system-out><![CDATA[Rejczel should post on: Snapchat
+John should post on: Facebook
+Jack should post on: Twitter
+
+Rejczel post on: Snapchat
+Rejczel now should post on: Facebook
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

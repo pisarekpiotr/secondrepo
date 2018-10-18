@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.Collection.CollectionTestSuite" tests="2" skipped="0" failures="0" errors="0"
-           timestamp="2018-07-12T20:45:44" hostname="Piotr-Komputer" time="0.003">
-    <properties/>
-    <testcase name="testOddNumbersExterminatorEmptyList" classname="com.kodilla.testing.Collection.CollectionTestSuite"
-              time="0.002"/>
-    <testcase name="testOddNumbersExterminatorNormallist" classname="com.kodilla.testing.Collection.CollectionTestSuite"
-              time="0.001"/>
-    <system-out><![CDATA[[2, 22]
+<testsuite name="com.kodilla.testing.Collection.CollectionTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-10-18T16:38:23" hostname="Piotr-Komputer" time="0.005">
+  <properties/>
+  <testcase name="testOddNumbersExterminatorEmptyList" classname="com.kodilla.testing.Collection.CollectionTestSuite" time="0.001"/>
+  <testcase name="testOddNumbersExterminatorNormallist" classname="com.kodilla.testing.Collection.CollectionTestSuite" time="0.003"/>
+  <system-out><![CDATA[[2, 22]
 ]]></system-out>
-    <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.spring.library.LibraryTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-10-18T16:38:19" hostname="Piotr-Komputer" time="0.56">
+  <properties/>
+  <testcase name="testSaveToDb" classname="com.kodilla.spring.library.LibraryTestSuite" time="0.196"/>
+  <testcase name="testLoadFromDb" classname="com.kodilla.spring.library.LibraryTestSuite" time="0.179"/>
+  <testcase name="testContext" classname="com.kodilla.spring.library.LibraryTestSuite" time="0.181"/>
+  <system-out><![CDATA[2018-10-18 18:38:19.524  INFO 7004 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kodilla.spring.library.LibraryTestSuite], using SpringBootContextLoader
+2018-10-18 18:38:19.525  INFO 7004 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kodilla.spring.library.LibraryTestSuite]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-10-18 18:38:19.526  INFO 7004 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kodilla.spring.library.LibraryTestSuite]: LibraryTestSuite does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-10-18 18:38:19.535  INFO 7004 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kodilla.spring.SpringRunner for test class com.kodilla.spring.library.LibraryTestSuite
+2018-10-18 18:38:19.536  INFO 7004 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-10-18 18:38:19.538  INFO 7004 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@35207ca9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@512acb3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4893ec95, org.springframework.test.context.support.DirtiesContextTestExecutionListener@50f75cee, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6604a76d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7663e82a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@21c35537, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4b396dcd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@8458408]
+2018-10-18 18:38:19.553  INFO 7004 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@610e0f92: startup date [Thu Oct 18 18:38:19 CEST 2018]; root of context hierarchy
+2018-10-18 18:38:19.636  INFO 7004 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'library' with a different definition: replacing [Generic bean: class [com.kodilla.spring.library.Library]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\Piotr\IdeaProjects\kodilla-course2\kodilla-spring2\build\classes\java\main\com\kodilla\spring\library\Library.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=libraryConfig; factoryMethodName=library; initMethodName=null; destroyMethodName=(inferred); defined in com.kodilla.spring.library.LibraryConfig]
+2018-10-18 18:38:19.636  INFO 7004 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'libraryDbController' with a different definition: replacing [Generic bean: class [com.kodilla.spring.library.LibraryDbController]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\Piotr\IdeaProjects\kodilla-course2\kodilla-spring2\build\classes\java\main\com\kodilla\spring\library\LibraryDbController.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=libraryConfig; factoryMethodName=libraryDbController; initMethodName=null; destroyMethodName=(inferred); defined in com.kodilla.spring.library.LibraryConfig]
+2018-10-18 18:38:19.731  INFO 7004 --- [    Test worker] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+Saving data to the database.
+2018-10-18 18:38:19.751  INFO 7004 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2b7bc736: startup date [Thu Oct 18 18:38:19 CEST 2018]; root of context hierarchy
+2018-10-18 18:38:19.821  INFO 7004 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'library' with a different definition: replacing [Generic bean: class [com.kodilla.spring.library.Library]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\Piotr\IdeaProjects\kodilla-course2\kodilla-spring2\build\classes\java\main\com\kodilla\spring\library\Library.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=libraryConfig; factoryMethodName=library; initMethodName=null; destroyMethodName=(inferred); defined in com.kodilla.spring.library.LibraryConfig]
+2018-10-18 18:38:19.822  INFO 7004 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'libraryDbController' with a different definition: replacing [Generic bean: class [com.kodilla.spring.library.LibraryDbController]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\Piotr\IdeaProjects\kodilla-course2\kodilla-spring2\build\classes\java\main\com\kodilla\spring\library\LibraryDbController.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=libraryConfig; factoryMethodName=libraryDbController; initMethodName=null; destroyMethodName=(inferred); defined in com.kodilla.spring.library.LibraryConfig]
+2018-10-18 18:38:19.913  INFO 7004 --- [    Test worker] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+Loading data from the database
+2018-10-18 18:38:19.936  INFO 7004 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@785e1e1: startup date [Thu Oct 18 18:38:19 CEST 2018]; root of context hierarchy
+2018-10-18 18:38:19.996  INFO 7004 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'library' with a different definition: replacing [Generic bean: class [com.kodilla.spring.library.Library]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\Piotr\IdeaProjects\kodilla-course2\kodilla-spring2\build\classes\java\main\com\kodilla\spring\library\Library.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=libraryConfig; factoryMethodName=library; initMethodName=null; destroyMethodName=(inferred); defined in com.kodilla.spring.library.LibraryConfig]
+2018-10-18 18:38:19.996  INFO 7004 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'libraryDbController' with a different definition: replacing [Generic bean: class [com.kodilla.spring.library.LibraryDbController]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\Piotr\IdeaProjects\kodilla-course2\kodilla-spring2\build\classes\java\main\com\kodilla\spring\library\LibraryDbController.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=libraryConfig; factoryMethodName=libraryDbController; initMethodName=null; destroyMethodName=(inferred); defined in com.kodilla.spring.library.LibraryConfig]
+2018-10-18 18:38:20.092  INFO 7004 --- [    Test worker] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+===== Beans list: ==== >>
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalRequiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.event.internalEventListenerProcessor
+org.springframework.context.event.internalEventListenerFactory
+calculator
+display
+forumUser
+library
+libraryConfig
+libraryDbController
+boardConfig
+readerConfig
+circle
+shapesFactory
+triangle
+springRunner
+toDoList
+inProgressList
+doneList
+board
+getReader
+book1
+createSquare
+chosenShape
+org.springframework.boot.autoconfigure.AutoConfigurationPackages
+org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+org.springframework.boot.autoconfigure.condition.BeanTypeRegistry
+propertySourcesPlaceholderConfigurer
+org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration
+mbeanExporter
+objectNamingStrategy
+mbeanServer
+org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor
+org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata
+org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties
+<< ===== Beans list ====
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
