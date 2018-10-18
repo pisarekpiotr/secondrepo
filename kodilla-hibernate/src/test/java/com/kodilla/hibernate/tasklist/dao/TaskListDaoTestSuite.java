@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Optional;
+import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -22,17 +22,18 @@ public class TaskListDaoTestSuite {
     @Test
     public void testFindByListName() {
         //Given
-        TaskList taskList = new TaskList(DESCRIPTION, "New list");
+        TaskList taskList = new TaskList(DESCRIPTION, "New list name");
+        taskListkDao.save(taskList);
+        String listName = taskList.getListName();
 
         //When
-        taskListkDao.save(taskList);
+        List<TaskList> readTasks = taskListkDao.findByListName(listName);
 
         //Then
-        int id = taskList.getId();
-        Optional<TaskList> readTask = taskListkDao.findById(id);
-        Assert.assertEquals(id, readTask.get().getId());
+        Assert.assertEquals(1, readTasks.size());
 
         //CleanUp
+        int id = readTasks.get(0).getId();
         taskListkDao.deleteById(id);
     }
 }
