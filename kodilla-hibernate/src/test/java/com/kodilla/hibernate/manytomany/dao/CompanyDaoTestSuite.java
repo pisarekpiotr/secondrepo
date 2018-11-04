@@ -96,7 +96,7 @@ public class CompanyDaoTestSuite {
         int volkswagenAktiengesellschaftId = volkswagenAktiengesellschaft.getId();
 
         //Then
-        List<Company> companyName = companyDao.retrieveByKeyValue("PSA%");
+        List<Company> companyName = companyDao.retrieveByKeyValue("PSA");
         List<Employee> employeSurname = employeeDao.retrieveValueBySurname("Clarckson");
 
         System.out.println(companyName.size());
@@ -104,8 +104,8 @@ public class CompanyDaoTestSuite {
 
         //Then
         try {
-            Assert.assertEquals(1, companyName.size());
-            Assert.assertEquals(1, employeSurname.size());
+            Assert.assertEquals(2, companyName.size());
+            Assert.assertEquals(2, employeSurname.size());
 
        } finally {
             //CleanUp

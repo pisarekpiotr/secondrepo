@@ -9,7 +9,7 @@ import java.util.List;
 @NamedNativeQuery(
 
                 name = "Company.retrieveByKeyValue",
-                query = "SELECT * FROM COMPANIES WHERE LEFT(company_name,4) LIKE :KEYVALUE",
+                query = "SELECT * FROM COMPANIES WHERE LEFT(company_name,3) = :KEYVALUE",
                 resultClass = Company.class
 )
 
