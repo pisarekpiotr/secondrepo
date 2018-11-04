@@ -95,9 +95,8 @@ public class CompanyDaoTestSuite {
         companyDao.save(volkswagenAktiengesellschaft);
         int volkswagenAktiengesellschaftId = volkswagenAktiengesellschaft.getId();
 
-
         //Then
-        List<Company> companyName = companyDao.retrieveByKeyValue("PSA");
+        List<Company> companyName = companyDao.retrieveByKeyValue("PSA%");
         List<Employee> employeSurname = employeeDao.retrieveValueBySurname("Clarckson");
 
         System.out.println(companyName.size());
