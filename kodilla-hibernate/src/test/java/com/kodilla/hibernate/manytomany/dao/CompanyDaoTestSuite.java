@@ -86,35 +86,31 @@ public class CompanyDaoTestSuite {
         fiatChryslerAutomobiles.getEmployees().add(jackSmith);
 
         jackSmith.getCompanies().add(volkswagenAktiengesellschaft);
-        jackSmith.getCompanies().add(fiatChryslerAutomobiles);
+        jeremyClarckson.getCompanies().add(pSAGroup);
         jeremyClarckson.getCompanies().add(volkswagenAktiengesellschaft);
         lindaBranighan.getCompanies().add(fiatChryslerAutomobiles);
-        jeremyClarckson.getCompanies().add(pSAGroup);
+        jackSmith.getCompanies().add(fiatChryslerAutomobiles);
 
         //When
         companyDao.save(volkswagenAktiengesellschaft);
         int volkswagenAktiengesellschaftId = volkswagenAktiengesellschaft.getId();
-        companyDao.save(pSAGroup);
-        int pSAGroupId = pSAGroup.getId();
-        companyDao.save(fiatChryslerAutomobiles);
-        int fiatChryslerAutomobilesId = fiatChryslerAutomobiles.getId();
 
 
         //Then
         List<Company> companyName = companyDao.retrieveByKeyValue("PSA");
         List<Employee> employeSurname = employeeDao.retrieveValueBySurname("Clarckson");
 
+        System.out.println(companyName.size());
+        System.out.println(employeSurname.size());
 
         //Then
-      //  try {
+        try {
             Assert.assertEquals(1, companyName.size());
             Assert.assertEquals(1, employeSurname.size());
 
-      //  } finally {
+       } finally {
             //CleanUp
-      //     companyDao.deleteById(volkswagenAktiengesellschaftId);
-     //      companyDao.deleteById(pSAGroupId);
-     //      companyDao.deleteById(fiatChryslerAutomobilesId);
-      //  }
+           companyDao.deleteById(volkswagenAktiengesellschaftId);
+        }
     }
 }
