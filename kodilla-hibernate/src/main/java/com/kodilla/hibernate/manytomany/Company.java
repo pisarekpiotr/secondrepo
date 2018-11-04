@@ -5,6 +5,14 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+
+@NamedNativeQuery(
+
+                name = "Company.retrieveByKeyValue",
+                query = "SELECT * FROM COMPANIES WHERE LEFT(company_name,4) < :KEYVALUE ",
+                resultClass = Company.class
+)
+
 @Entity
 @Table(name = "COMPANIES")
 public class Company {

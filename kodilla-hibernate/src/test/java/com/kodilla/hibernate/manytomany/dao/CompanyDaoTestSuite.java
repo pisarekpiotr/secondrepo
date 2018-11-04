@@ -9,11 +9,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.List;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class CompanyDaoTestSuite {
+
     @Autowired
-    CompanyDao companyDao;
+    public CompanyDao companyDao;
+
+    @Autowired
+    public EmployeeDao employeeDao;
 
     @Test
     public void testSaveManyToMany(){
@@ -59,5 +65,56 @@ public class CompanyDaoTestSuite {
         } catch (Exception e) {
             //do nothing
         }
+    }
+
+    @Test
+    public void testCompanyAndEmployee(){
+
+        //Given
+        Employee jackSmith = new Employee("Jack", "Smith");
+        Employee jeremyClarckson = new Employee("Jeremy", "Clarckson");
+        Employee lindaBranighan = new Employee("Linda", "Branighan");
+
+        Company volkswagenAktiengesellschaft  = new Company("Volkswagen Aktiengesellschaft");
+        Company pSAGroup = new Company("PSA Group");
+        Company fiatChryslerAutomobiles = new Company("Fiat Chrysler Automobiles");
+
+        volkswagenAktiengesellschaft.getEmployees().add(jackSmith);
+        pSAGroup.getEmployees().add(jeremyClarckson);
+        volkswagenAktiengesellschaft.getEmployees().add(jeremyClarckson);
+        fiatChryslerAutomobiles.getEmployees().add(lindaBranighan);
+        fiatChryslerAutomobiles.getEmployees().add(jackSmith);
+
+        jackSmith.getCompanies().add(volkswagenAktiengesellschaft);
+        jackSmith.getCompanies().add(fiatChryslerAutomobiles);
+        jeremyClarckson.getCompanies().add(volkswagenAktiengesellschaft);
+        lindaBranighan.getCompanies().add(fiatChryslerAutomobiles);
+        jeremyClarckson.getCompanies().add(pSAGroup);
+
+        //When
+        companyDao.save(volkswagenAktiengesellschaft);
+        int volkswagenAktiengesellschaftId = volkswagenAktiengesellschaft.getId();
+        companyDao.save(pSAGroup);
+        int pSAGroupId = pSAGroup.getId();
+        companyDao.save(fiatChryslerAutomobiles);
+        int fiatChryslerAutomobilesId = fiatChryslerAutomobiles.getId();
+
+
+        //Then
+        List<Company> companyName = companyDao.retrieveByKeyValue("PSA");
+        List<Employee> employeSurname = employeeDao.retrieveValueBySurname("Clarckson");
+
+
+        //Then
+      //  try {
+            Assert.assertEquals(1, companyName.size());
+            Assert.assertEquals(1, employeSurname.size());
+
+      //  } finally {
+            //CleanUp
+      //     companyDao.deleteById(volkswagenAktiengesellschaftId);
+     //      companyDao.deleteById(pSAGroupId);
+     //      companyDao.deleteById(fiatChryslerAutomobilesId);
+      //  }
     }
 }
